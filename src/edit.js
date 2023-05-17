@@ -8,7 +8,7 @@ export default function Edit() {
 		<div { ...useBlockProps({
       className: `uncommon-home-hover-reveal`
     }) }>
-      <p className='label'>Home Hover Reveal Block</p>
+      <p className='label'>Home Hover Reveal Block: Link an image and a word to the same #tag to create a hover/reveal relationship.</p>
 			<InnerBlocks 
         allowedBlocks={['core/image', 'core/heading', 'core/paragraph', 'core/group']}
         template={[

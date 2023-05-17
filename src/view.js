@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
   let secondScrollChangeY = containerPosY;
   let thirdScrollChangeY = containerPosY + (window.innerHeight / 4) / 2;
   let fourthScrollChangeY = containerPosY + (window.innerHeight / 4) ;
+  let fifthScrollChangeY = containerPosY + (window.innerHeight / 3) ;
 
   window.addEventListener('scroll', () => {
     containerPosY = container.getBoundingClientRect().top + window.scrollY;
@@ -59,6 +60,9 @@ window.addEventListener('load', () => {
     }
     if ( window.scrollY > fourthScrollChangeY ) {
       revealHandler(links[4], 4);
+    }
+    if ( window.scrollY > fifthScrollChangeY ) {
+      revealHandler(links[5], 5);
     }
   })
 

@@ -29,6 +29,9 @@
   margin-top: 0;
 }
 .uncommon-home-hover-reveal__images {
+  & .wp-block-image {
+    position: relative;
+  }
   & .wp-block-image img {
     opacity: 1;
     visibility: visible;
