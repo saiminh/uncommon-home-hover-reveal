@@ -1,0 +1,36 @@
+.wp-block-create-block-uncommon-home-hover-reveal {
+	border: 1px dotted #f00;
+}
+.uncommon-home-hover-reveal__images {
+  display: flex;
+
+  & .wp-block-image {
+    flex: 0 1 25%;
+  }
+}
+.uncommon-home-hover-reveal .wp-block-heading:first-child {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+
+  & a {
+    color: var(--wp--preset--color--pigment-purple);
+    text-decoration: underline;
+  }
+
+  & a.revealed {
+    color: var(--wp--preset--color--pigment-purple, #9487e4);
+    text-decoration: underline;
+  }
+}
+.uncommon-home-hover-reveal .wp-block-heading:last-child {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+.uncommon-home-hover-reveal__images {
+  & .wp-block-image img {
+    opacity: 1;
+    visibility: visible;
+  }
+}
