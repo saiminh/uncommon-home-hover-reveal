@@ -29,6 +29,8 @@
   margin-top: 0;
 }
 .uncommon-home-hover-reveal__images {
+  aspect-ratio: auto;
+
   & .wp-block-image {
     position: relative;
   }
