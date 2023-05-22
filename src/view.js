@@ -24,7 +24,7 @@ function revealHandler(element, index) {
 }
 
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.uncommon-home-hover-reveal');
   let containerPosY = container.getBoundingClientRect().top + window.scrollY;
   
