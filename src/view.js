@@ -14,7 +14,7 @@ function revealHandler(element, index) {
     })
     const imageContainer = document.querySelector('.uncommon-home-hover-reveal__images'),
           windowWidth = window.innerWidth,
-          amountOfImages = document.querySelectorAll('.uncommon-home-hover-reveal__images img').length;
+          amountOfImages = document.querySelectorAll('.uncommon-home-hover-reveal__images img').length,
           imageContainerWidth = imageContainer.querySelector('img').offsetWidth,
           ueberbleib = windowWidth - imageContainerWidth,
           ueberbleibProImage = ueberbleib / amountOfImages,
