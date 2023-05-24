@@ -20,11 +20,10 @@ export default function Edit() {
             className: 'uncommon-home-hover-reveal__images',
             anchor: 'images'
           }, [
-            ['core/image'],['core/image'],['core/image'],['core/image'],['core/image']
+            ['core/image'],['core/image'],['core/image'],['core/image'],['core/image'],['core/image']
           ]],
           ['core/heading']
         ]}
-        templateLock={'all'}
       />
 		</div>
 	);
