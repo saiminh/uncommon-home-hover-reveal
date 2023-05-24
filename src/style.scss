@@ -1,3 +1,11 @@
+.uncommon-home-hover-reveal {
+  overflow: hidden;
+  width: 100%;
+
+  & .wp-block-heading {
+    padding: 0 var(--wp--preset--spacing--outer);
+  }
+}
 .uncommon-home-hover-reveal .wp-block-heading:first-child {
   position: relative;
   z-index: 1;
