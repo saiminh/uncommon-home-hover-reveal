@@ -37,11 +37,11 @@ window.addEventListener('DOMContentLoaded', () => {
     link.addEventListener( 'mouseenter', (e) => revealHandler(e.target, index) );
   })
 
-  let firstScrollChangeY = containerPosY - (window.innerHeight / 4) / 2 ;
-  let secondScrollChangeY = containerPosY;
-  let thirdScrollChangeY = containerPosY + (window.innerHeight / 4) / 2;
-  let fourthScrollChangeY = containerPosY + (window.innerHeight / 4) ;
-  let fifthScrollChangeY = containerPosY + (window.innerHeight / 3) ;
+  let firstScrollChangeY = containerPosY - (window.innerHeight / 8);
+  let secondScrollChangeY = containerPosY + (window.innerHeight / 12);
+  let thirdScrollChangeY = containerPosY + (window.innerHeight / 3);
+  // let fourthScrollChangeY = containerPosY + (window.innerHeight / 4) ;
+  // let fifthScrollChangeY = containerPosY + (window.innerHeight / 3) ;
 
   window.addEventListener('scroll', () => {
     containerPosY = container.getBoundingClientRect().top + window.scrollY;
@@ -58,12 +58,12 @@ window.addEventListener('DOMContentLoaded', () => {
     if ( window.scrollY > thirdScrollChangeY ) {
       revealHandler(links[3], 3);
     }
-    if ( window.scrollY > fourthScrollChangeY ) {
-      revealHandler(links[4], 4);
-    }
-    if ( window.scrollY > fifthScrollChangeY ) {
-      revealHandler(links[5], 5);
-    }
+    // if ( window.scrollY > fourthScrollChangeY ) {
+    //   revealHandler(links[4], 4);
+    // }
+    // if ( window.scrollY > fifthScrollChangeY ) {
+    //   revealHandler(links[5], 5);
+    // }
   })
 
 })
